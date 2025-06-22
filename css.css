@@ -149,6 +149,12 @@ body{
     font-weight: bold;
 }
 
+#selected-option> span{
+    font-weight: normal;
+    width: 25px;
+    height: 25px;
+}
+
 #product-panel{
     display: flex;
     flex-direction: row;
