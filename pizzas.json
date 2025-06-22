@@ -1,0 +1,105 @@
+[
+    {
+        "name": "Імпреза",
+        "description": "М'ясна",
+        "composition": "Балик, салямі, сир моцарелла, сир рокфорд, ананаси, томатна паста, петрушка",
+        "image": "images/pizza_7.jpg",
+        "title": "new",
+        "sizes": {
+          "small": { "diameter": 30, "weight": 370, "price": 99 },
+          "big": { "diameter": 40, "weight": 660, "price": 169 }
+        }
+    },
+    {
+        "name": "BBQ",
+        "description": "З грибами",
+        "composition": "Мисливські ковбаски, ковбаски папероні, шинка, сир домашній, шампіньйони, петрушка, оливки",
+        "image": "images/pizza_2.jpg",
+        "title": "popular",
+        "sizes": {
+          "small": { "diameter": 30, "weight": 460, "price": 139 },
+          "big": { "diameter": 40, "weight": 840, "price": 199 }
+        }
+    },
+    {
+        "name": "Міксовий поло",
+        "description": "З ананасом",
+        "composition": "Вітчина, курка копчена, сир моцарела, ананаси, кукурудза, петрушка, соус томатний",
+        "image": "images/pizza_1.jpg",
+        "sizes": {
+          "small": { "diameter": 30, "weight": 430, "price": 115 },
+          "big": { "diameter": 40, "weight": 780, "price": 179 }
+        }
+    },
+    {
+        "name": "Грибна",
+        "description": "М'ясна",
+        "composition": "Вітчина, курка копчена, сир моцарела, ананаси, кукурудза, петрушка, соус томатний",
+        "image": "images/pizza_4.jpg",
+        "sizes": {
+          "small": { "diameter": 30, "weight": 430, "price": 115 },
+          "big": { "diameter": 40, "weight": 780, "price": 179 }
+        }
+    },
+    {
+        "name": "Маргарита",
+        "description": "Веганська",
+        "composition": "Томатний соус, моцарела, базилік, оливкова олія",
+        "image": "images/pizza_3.jpg",
+        "title": "new",
+        "sizes": {
+          "small": { "diameter": 30, "weight": 400, "price": 119 },
+          "big": { "diameter": 40, "weight": 720, "price": 169 }
+        }
+    },
+    {
+        "name": "Пепероні",
+        "description": "З морепродуктами",
+        "composition": "Ковбаса пепероні, томатний соус, сир моцарела",
+        "image": "images/pizza_6.jpg",
+        "sizes": {
+          "small": { "diameter": 30, "weight": 450, "price": 129 },
+          "big": { "diameter": 40, "weight": 800, "price": 179 }
+        }
+    },
+    {
+        "name": "Овочева",
+        "description": "З ананасом",
+        "composition": "Болгарський перець, помідори, кукурудза, шампіньйони, зелень",
+        "image": "images/pizza_8.jpg",
+        "sizes": {
+          "small": { "diameter": 30, "weight": 410, "price": 109 },
+          "big": { "diameter": 40, "weight": 740, "price": 159 }
+        }
+    },
+    {
+        "name": "Чотири сири",
+        "description": "М'ясна",
+        "composition": "Моцарела, дорблю, пармезан, вершковий соус, гауда",
+        "image": "images/pizza_5.jpg",
+        "sizes": {
+          "small": { "diameter": 30, "weight": 430, "price": 149 },
+          "big": { "diameter": 40, "weight": 780, "price": 199 }
+        }
+    },
+    {
+        "name": "Козацька",
+        "description": "З грибами",
+        "composition": "Копчена грудинка, бекон, мисливські ковбаски, цибуля, часниковий соус",
+        "image": "images/pizza_9.jpg",
+        "sizes": {
+          "small": { "diameter": 30, "weight": 470, "price": 129 },
+          "big": { "diameter": 40, "weight": 830, "price": 189 }
+        }
+    },
+    {
+        "name": "Россо густо",
+        "description": "Веганська",
+        "composition": "В’ялені томати, соус песто, моцарела, сир гауда, базилік",
+        "image": "images/pizza_1.jpg",
+        "sizes": {
+          "small": { "diameter": 30, "weight": 420, "price": 119 },
+          "big": { "diameter": 40, "weight": 790, "price": 179 }
+        }
+    }
+]
