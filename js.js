@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const exitButton= document.querySelector(".exit");
     const countToBuy = document.querySelector("#count-to-buy")
     const removeOrder = document.querySelector("#remove-order")
     const productPanel = document.querySelector("#product-panel")
+    const reportBtn = document.querySelector(".order")
     const initialCart = getCartFromLocalStorage();
     let allPizzas = [];
     renderCart(initialCart);
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let sum=0;
 
         cart.forEach(product =>{
-            sum += product.price * product.count
+            sum += parseFloat((product.price * product.count * 0.8).toFixed(2))
         })
         document.querySelector(".summary-price").textContent = `${sum} грн`;
     }
@@ -122,6 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const item = {
                 name: productInfo.querySelector(".product-name").textContent,
+                description: productInfo.querySelector(".description").textContent.trim(),
                 size: sizeDiv.dataset.size,
                 sizeText: sizeDiv.dataset.size === "small" ? "Мала" : "Велика",
                 diameter: sizeDiv.querySelector(".diameter").textContent.trim(),
@@ -144,7 +145,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             saveCartToStorage(cart);
             renderCart(cart);
-            updateSummaryPrice();
         }
     });
 
@@ -168,7 +168,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         saveCartToStorage(cart);
         renderCart(cart);
-        updateSummaryPrice();
     });
 
     document.querySelector("#all-options").addEventListener("click", (e) =>{
@@ -200,11 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
         renderCart([]);
     });
 
-    exitButton.addEventListener("click", () => {
-        if (window.opener != null) {
-            window.close();
-        } else {
-            alert("Цю вкладку неможливо закрити скриптом.");
-        }
-    })
+    reportBtn.addEventListener("click", () => {
+        window.open("report.html", "_blank");
+    });
 })
