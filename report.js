@@ -7,7 +7,7 @@ const reportData = cart.map(item => ({
     count: item.count,
     price: item.price * item.count,
     discount: item.price * item.count * 0.2,
-    priceWithDiscount: item.price * 0.8
+    priceWithDiscount: item.price * item.count * 0.8
 }));
 
 const pivot = new WebDataRocks({
